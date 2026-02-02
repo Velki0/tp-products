@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { Product } from '../../model/product';
 import { LocalStorageService } from '../../../injproducts';
+import { Product } from '../../model/product';
 
 @Component({
   selector: 'app-product-get',
@@ -19,7 +19,7 @@ export class ProductGet implements OnInit {
 
     this.loadProducts();
 
-  }
+  };
 
   private loadProducts(): void {
 
@@ -29,7 +29,7 @@ export class ProductGet implements OnInit {
         return product ? { ...product, id: key } : null;
       }).filter(Boolean) as Product[];
 
-  }
+  };
 
   protected deleteProduct(id: string): void {
 
@@ -42,6 +42,6 @@ export class ProductGet implements OnInit {
 
     this.router.navigate(['/products/edit', id]);
 
-  }
+  };
 
 }

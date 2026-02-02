@@ -6,5 +6,5 @@ import { ProductEdit } from './site/product/product-edit/product-edit';
 export const routes: Routes = [
     { path: 'products', component: ProductGet },
     { path: 'products/add', component: ProductAdd },
-    { path: 'products/edit/:id', component: ProductEdit },
+    { path: 'products/edit/:id', component: ProductEdit }
 ];

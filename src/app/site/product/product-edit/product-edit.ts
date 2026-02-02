@@ -36,6 +36,7 @@ export class ProductEdit implements OnInit {
   };
 
   private loadProductData(): void {
+
     const product = this.lss.getItem<Product>(this.id);
     if (product) {
       this.angForm.patchValue({
@@ -45,7 +46,8 @@ export class ProductEdit implements OnInit {
         productPrice: product.productPrice,
       });
     }
-  }
+    
+  };
 
   protected onSubmit(): void {
 
