@@ -15,7 +15,7 @@ export class ProductGet implements OnInit {
 
   constructor(private lss: LocalStorageService, private router: Router) { }
 
-   public ngOnInit(): void {
+  public ngOnInit(): void {
 
     this.loadProducts();
 
